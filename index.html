@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>echonest</title>
+	<script src="jquery-1.7.1.js"></script>
+	<script src="common.js"></script>
+	<script src="main.js"></script>
+</head>
+<body>
+<div>
+	echonest test
+        <form id='select-track' action="http://developer.echonest.com/api/v4/track/upload" method="post" enctype="multipart/form-data">
+          <input type="hidden" name="filetype" value="mp3">
+          <input type="hidden" name="api_key" value="5I0JUWBNOFNGL33PZ">
+          Select an <b>MP3</b> to upload : <input id="file" name="track" type="file"> 
+          <br>
+          <input id='upload' type="submit" value="Upload MP3"> 
+        </form> 
+</div>
+<div id='result'>
+	<div id='track-id'></div>
+</div>
+<button id='reload'>reload</button>
+</body>
